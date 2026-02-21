@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="noir-opulence">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rupesh Prajapati | Software Developer</title>
+
+  <!-- Fonts (Luxury Editorial) -->
+  <link href="https://fonts.googleapis.com/css2?family=Didot&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ================= Ivory Minimalism Theme ================= */
+    :root {
+      --bg: #FDFBF8;
+      --fg: #111111;
+      --accent: #111111;
+      --muted: #5C5C5C;
+      --border: #EEE9E2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Work Sans', system-ui, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: min(1120px, 92vw); margin: 0 auto; }
+
+    /* ================= Navbar ================= */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(253,251,248,0.85);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-family: 'Didot', serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    .nav-center {
+      text-align: center;
+    }
+
+    .nav-center h1 {
+      margin: 0;
+      font-family: 'Didot', serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .nav-center span {
+      display: block;
+      font-family: 'Didot', serif;
+      letter-spacing: 0.35em;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ================= Hero ================= */
+    .hero {
+      text-align: center;
+      padding: clamp(120px, 15vw, 200px) 0 140px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero h2 {
+      font-family: 'Didot', serif;
+      font-size: clamp(44px, 7vw, 84px);
+      margin: 0 0 12px;
+      font-weight: 700;
+    }
+
+    .hero .role {
+      font-family: 'Didot', serif;
+      letter-spacing: 0.4em;
+      font-size: 14px;
+      color: var(--accent);
+      margin-bottom: 40px;
+    }
+
+    .hero p {
+      max-width: 68ch;
+      margin: 0 auto;
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    /* ================= Sections ================= */
+    section {
+      padding: clamp(90px, 10vw, 140px) 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section h3 {
+      font-family: 'Didot', serif;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 16px;
+      background: #ffffff;
+    }
+
+    ul { padding-left: 18px; color: var(--muted); }
+
+    /* ================= Footer ================= */
+    footer {
+      text-align: center;
+      padding: 50px 0 70px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav-center { display: none; }
+    }
+
+    .email-link {
+  color: #111111;          /* Blue = clickable */
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.email-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.linkedin-link {
+  color: #111111;          /* Blue = clickable */
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.linkedin-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">RP</div>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Rupesh Prajapati</h2>
+      <div class="role">SOFTWARE DEVELOPER</div>
+      <p>
+        Seeking a challenging role as a software developer where I can apply my skills and knowledge to contribute effectively
+        to the development and success of innovative projects, while continuously enhancing my expertise in the field.
+      </p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h3>About Me</h3>
+      <p>
+        I am a B.Tech student in Electronics and Computer Science with hands-on experience in Python development, GUI applications,
+        automation projects, and data-driven solutions. I enjoy building clean, functional systems that combine logic, usability,
+        and performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h3>Skills</h3>
+      <div class="grid-2">
+        <div class="card">
+          <strong>Technical Skills</strong>
+          <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>MySQL</li>
+            <li>Power BI</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Soft Skills</strong>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Team Management</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="grid-2">
+        <div class="card">
+          <strong>Automatic Timer Water Sprinkler</strong>
+          <p>Automated irrigation system using soil moisture sensor, timer logic, and solar-powered electronics to optimize water usage.</p>
+        </div>
+        <div class="card">
+          <strong>Text to Speech Application</strong>
+          <p>Python-based GUI application using Tkinter, gTTS, and Pygame with multi-language support and audio export.</p>
+        </div>
+        <div class="card">
+          <strong>Stock Price Forecasting</strong>
+          <p>Predictive modeling using Facebook Prophet, Linear Regression, Random Forest, and visualization via Streamlit and Power BI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h3>Education</h3>
+      <div class="grid-2">
+        <div class="card">
+          <strong>Shah & Anchor Kutchhi Engineering College</strong>
+          <p>B.Tech — Electronics & Computer Science<br>CGPA: 7 | 2022 – 2026</p>
+        </div>
+        <div class="card">
+          <strong>Patuck Technical High School & Junior College</strong>
+          <p>HSC — 52.33% | 2020 – 2022</p>
+        </div>
+         <div class="card">
+          <strong>Oxford English High School</strong>
+          <p>SSC — 67.40% | 2020 </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h3>Contact</h3>
+      <div>
+        <p>Phone: 9867359747</p>
+        <p>Email: <a href="mailto:prajapati.rupesh1103@gmail.com" class="email-link">prajapati.rupesh1103@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rupesh-prajapati" class="linkedin-link" target="_blank">linkedin.com/in/rupesh-prajapati</a></p>
+        <p>Location: Mumbai</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Rupesh Prajapati Portfolio
+</footer>
+
+</body>
+</html>
